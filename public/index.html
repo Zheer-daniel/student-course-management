@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student & Course Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Student &amp; Course Management System</h1>
+    <p>Node.js + Express &middot; SCSJ4383 Assignment 2</p>
+  </header>
+
+  <main>
+    <!-- FEATURE 1 + 5: Students + Search -->
+    <section class="card">
+      <h2>1. Students</h2>
+      <form id="studentForm">
+        <input type="hidden" id="studentId" />
+        <input id="sName" placeholder="Full name" required />
+        <input id="sEmail" type="email" placeholder="Email" required />
+        <input id="sMatric" placeholder="Matric no" required />
+        <button type="submit">Save Student</button>
+        <button type="button" id="sReset" class="ghost">Clear</button>
+      </form>
+      <div class="searchbar">
+        <input id="sSearch" placeholder="Search students by name..." />
+      </div>
+      <table id="studentTable">
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Matric</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- FEATURE 2: Courses -->
+    <section class="card">
+      <h2>2. Courses</h2>
+      <form id="courseForm">
+        <input type="hidden" id="courseId" />
+        <input id="cCode" placeholder="Code (e.g. SCSJ4383)" required />
+        <input id="cTitle" placeholder="Title" required />
+        <input id="cCredits" type="number" placeholder="Credits" value="3" />
+        <button type="submit">Save Course</button>
+        <button type="button" id="cReset" class="ghost">Clear</button>
+      </form>
+      <table id="courseTable">
+        <thead><tr><th>ID</th><th>Code</th><th>Title</th><th>Credits</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- FEATURE 3 + 4: Enroll + View enrollments -->
+    <section class="card">
+      <h2>3. Enroll Student in Course</h2>
+      <form id="enrollForm">
+        <select id="eStudent" required></select>
+        <select id="eCourse" required></select>
+        <input id="eGrade" placeholder="Grade (optional)" />
+        <button type="submit">Enroll</button>
+      </form>
+
+      <h2>4. View a Student's Courses</h2>
+      <select id="viewStudent"></select>
+      <table id="enrollTable">
+        <thead><tr><th>Code</th><th>Title</th><th>Credits</th><th>Grade</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

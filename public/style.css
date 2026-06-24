@@ -1,0 +1,20 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #0f1115; color: #e6e6e6; padding: 0 0 60px; }
+header { background: #1a1d24; padding: 24px 32px; border-bottom: 2px solid #7c5cff; }
+header h1 { font-size: 22px; }
+header p { color: #9aa0aa; font-size: 13px; margin-top: 4px; }
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; display: grid; gap: 20px; }
+.card { background: #1a1d24; border: 1px solid #2a2e38; border-radius: 10px; padding: 20px; }
+.card h2 { font-size: 16px; margin-bottom: 12px; color: #c8c2ff; }
+form { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+input, select { background: #0f1115; border: 1px solid #2a2e38; color: #e6e6e6; padding: 8px 10px; border-radius: 6px; flex: 1; min-width: 120px; }
+button { background: #7c5cff; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+button:hover { background: #6a4ae0; }
+button.ghost { background: transparent; border: 1px solid #2a2e38; color: #9aa0aa; }
+.searchbar { margin-bottom: 10px; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #2a2e38; }
+th { color: #9aa0aa; font-weight: 600; }
+td button { padding: 4px 10px; font-size: 12px; margin-right: 4px; }
+td button.del { background: #e0445b; }
+td button.del:hover { background: #c5384c; }

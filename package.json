@@ -1,0 +1,18 @@
+{
+  "name": "student-course-management",
+  "version": "1.0.0",
+  "description": "Student & Course Management System built with Node.js + Express (SCSJ4383 Assignment 2)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": ["express", "rest", "students", "courses"],
+  "author": "Halan",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
